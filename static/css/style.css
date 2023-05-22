@@ -1,0 +1,27 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #map,
+  body,
+  html {
+    height: 100%;
+  }
+
+  .center {
+    text-align: center;
+
+  }
+
+  h1 {
+    font-family: 'poppins';
+  }
+
+  h2 {
+    font-family: 'poppins';
+  }
+
+  h3 {
+    font-family: 'poppins';
+  }
