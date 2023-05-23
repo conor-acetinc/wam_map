@@ -309,13 +309,64 @@ function makeMap(features) {
     //////////////////////////////////////////////////////////////////////////////////
     // STEP 5e: Dinkytown events
     var event20 = L.marker([44.9857257, -93.2375709], {icon: orangeIcon})
-    .bindPopup(`<h2>${"Marcu Park Grand Reopening"}</h2>
+    .bindPopup(`<h2>${"Marcy Park Grand Reopening"}</h2>
                 <hr>
                 <h2>June 3 10:00am</h2>
                 <hr>
                 <a href="https://www.marcy-holmes.org/marcy_park_grand_reopening" target="_blank">Link</a>`);
+
+    var event21 = L.marker([44.980755, -93.2368268], {icon: orangeIcon})
+    .bindPopup(`<h2>${"Ava Max"}</h2>
+                <hr>
+                <h2>June 30 7:30 - 10:00pm</h2>
+                <hr>
+                <a href="https://www.eventbrite.com/e/ava-max-tickets-tickets-616859452227" target="_blank">Link</a>`);
+
+    var event22 = L.marker([44.980630, -93.2367800], {icon: orangeIcon})
+    .bindPopup(`<h2>${"The Rare Occasions"}</h2>
+                <hr>
+                <h2>June 18 5:30 - 9:30pm</h2>
+                <hr>
+                <a href="https://www.bandsintown.com/e/1027598597-the-rare-occasions-at-varsity-theater" target="_blank">Link</a>`);
+
+    var event23 = L.marker([44.980430, -93.2367800], {icon: orangeIcon})
+    .bindPopup(`<h2>${"Pete Holmes: Where Were We"}</h2>
+                <hr>
+                <h2>June 3 7:00pm <br />
+                June 17 7:00pm </h2>
+                <hr>
+                <a href="https://www.leadertelegram.com/country-today/local-events/?_evDiscoveryPath=/event%2F29803253t-pete-holmes-live-where-were-we" target="_blank">Link</a>`);
+
+
+    var event24 = L.marker([44.980160, -93.2369800], {icon: orangeIcon})
+    .bindPopup(`<h2>${"TARJA: Living the Dream Tour"}</h2>
+                <hr>
+                <h2>June 22 7:00 - 11:00pm </h2>
+                <hr>
+                <a href="https://app.discotech.me/events/37348347-tarja-living-the-dream-tour-at-varsity-theater" target="_blank">Link</a>`);
     
-    var dinky = L.layerGroup([event20]);
+    var event25 = L.marker([44.980160, -93.2372000], {icon: orangeIcon})
+    .bindPopup(`<h2>${"KayCyy: The Who Else?! Tour"}</h2>
+                <hr>
+                <h2>June 25 7:00pm </h2>
+                <hr>
+                <a href="https://app.discotech.me/events/37426649-kaycyy-the-who-else-tour-at-varsity-theater" target="_blank">Link</a>`);
+    
+    var event26 = L.marker([44.980360, -93.2372000], {icon: orangeIcon})
+    .bindPopup(`<h2>${"Sorry Papi Tour: The All Girl Party"}</h2>
+                <hr>
+                <h2>June 10 9:00pm - 1:00am </h2>
+                <hr>
+                <a href="https://m.startribune.com/variety/things-to-do/calendar/details/Sorry-Papi-Tour-The-All-Girl-Party/11838530/2023-06-10T21" target="_blank">Link</a>`);
+    
+    var event27 = L.marker([44.980560, -93.2372000], {icon: orangeIcon})
+    .bindPopup(`<h2>${"BE OUR GUEST: The Disney DJ Night"}</h2>
+                <hr>
+                <h2>June 9 9:00pm - 1:00am </h2>
+                <hr>
+                <a href="https://m.startribune.com/variety/things-to-do/calendar/details/BE-OUR-GUEST-The-Disney-DJ-Night/11873822/2023-06-09T21" target="_blank">Link</a>`);
+    
+    var dinky = L.layerGroup([event20, event21, event22, event23, event24, event25, event26, event27]);
 
     // Overlays that may be toggled on or off
     var overlayMaps = {
