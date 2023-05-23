@@ -74,14 +74,14 @@ function makeMap(features) {
         layers: [dark, geojsonLayer]
     });
 
+    //////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////    
     // MARKERS
-    // STEP 5: Add markers for Indigenous events
+    // STEP 5a: Add markers for Indigenous events
     var event0 = L.marker([44.92828, -93.12650])
     .bindPopup(`<h2>${"Wild Women, Wild Food, Wathogda Mashkiki!"}</h2>
                 <hr>
                 <h2>June 17 12:00pm - 5:00pm</h2>
-                <hr>
-                <h3>Indigenous</h3>
                 <hr>
                 <a href="https://www.eventbrite.com/e/wild-women-wild-food-wathogda-mashkiki-tickets-639679989067" target="_blank">Link</a>`);
                 
@@ -94,8 +94,6 @@ function makeMap(features) {
                 June 22 5:00 - 7:00pm <br />
                 June 29 5:00 - 7:00pm</h2>
                 <hr>
-                <h3>Indigenous</h3>
-                <hr>
                 <a href="https://aifcmn.org/event/nacc-ogichidaa-nagamon/2023-06-01/" target="_blank">Link</a>`);
 
     var event2 = L.marker([44.967674, -93.075694])
@@ -105,9 +103,7 @@ function makeMap(features) {
                 June 8 6:00 - 7:30pm <br />
                 June 15 6:00 - 7:30pm <br />
                 June 22 6:00 - 7:30pm <br />
-                June29 6:00 - 7:30pm</h2>
-                <hr>
-                <h3>Indigenous</h3>
+                June 29 6:00 - 7:30pm</h2>
                 <hr>
                 <a href="https://aifcmn.org/event/dakota-language-night/2023-06-01/" target="_blank">Link</a>`);
 
@@ -120,8 +116,6 @@ function makeMap(features) {
                 June 23 2:00 - 4:00pm <br />
                 June 30 2:00 - 4:00pm</h2>
                 <hr>
-                <h3>Indigenous</h3>
-                <hr>
                 <a href="https://aifcmn.org/event/nacc-the-way-to-recovery-womens-talking-circle/2023-06-02/" target="_blank">Link</a>`);
 
     var event4 = L.marker([44.948179, -93.259237])
@@ -130,8 +124,6 @@ function makeMap(features) {
                 <h2>June 4 12:00 - 5:00pm <br />
                 June 14 3:00 - 8:00pm <br />
                 June 18 12:00 - 5:00pm</h2>
-                <hr>
-                <h3>Indigenous</h3>
                 <hr>
                 <a href="https://aifcmn.org/event/two-spirit-powwow-regalia-making/2023-06-04/" target="_blank">Link</a>`);
 
@@ -143,8 +135,6 @@ function makeMap(features) {
                 June 19 6:00 - 8:00pm <br />
                 June 26 6:00 - 8:00pm</h2>
                 <hr>
-                <h3>Indigenous</h3>
-                <hr>
                 <a href="https://aifcmn.org/event/ombiayaa-anishinaabe-ininiiwug-rise-up-original-men/2023-06-05/" target="_blank">Link</a>`);
 
     var event6 = L.marker([44.9600342, -93.2534264])
@@ -155,17 +145,15 @@ function makeMap(features) {
                 June 20 6:30 - 8:00pm <br />
                 June 27 6:30 - 8:00pm</h2>
                 <hr>
-                <h3>Indigenous</h3>
-                <hr>
                 <a href="https://aifcmn.org/event/culture-language-arts-network-clan-drum-dance/2023-06-06/" target="_blank">Link</a>`);
 
     var event7 = L.marker([44.967874, -93.075694])
     .bindPopup(`<h2>${"AIFC Women & Mother’s Support Group"}</h2>
                 <hr>
                 <h2>June 7 12-1:30pm <br />
-                June 14 12:00 - 1:30pm</h2>
-                <hr>
-                <h3>Indigenous</h3>
+                June 14 12:00 - 1:30pm <br />
+                June 21 12:00 - 1:30pm <br />
+                June 28 12:00 - 1:30pm</h2>
                 <hr>
                 <a href="https://aifcmn.org/event/aifc-women-mothers-support-group/2023-06-07/" target="_blank">Link</a>`);
 
@@ -174,8 +162,6 @@ function makeMap(features) {
                 <hr>
                 <h2>June 7 12-1:30pm</h2>
                 <hr>
-                <h3>Indigenous</h3>
-                <hr>
                 <a href="https://aifcmn.org/event/aifc-women-mothers-support-group/2023-06-07/" target="_blank">Link</a>`);
 
     var event9 = L.marker([44.943899, -93.2440493])
@@ -183,19 +169,115 @@ function makeMap(features) {
                 <hr>
                 <h2>June 24 Time TBD</h2>
                 <hr>
-                <h3>Indigenous</h3>
-                <hr>
                 <a href="https://aifcmn.org/event/new-native-theatre-two-spirit-powwow/" target="_blank">Link</a>`);
 
     var indigienous = L.layerGroup([event0, event1, event2, event3, event4, event5, event6, event7, event8, event9]);
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////
+    // STEP 5b: Add markers for Hmong events
+    var event10 = L.marker([44.9459645, -93.0971395])
+    .bindPopup(`<h2>${"2023 MN Qeej and Hmong Arts Festival"}</h2>
+                <hr>
+                <h2>June 4 4:00pm</h2>
+                <hr>
+                <a href="https://allevents.in/mobile/amp-event.php?event_id=200024412378519" target="_blank">Link</a>`);
+
+    var event11 = L.marker([44.9477439, -93.2412726])
+    .bindPopup(`<h2>${"9th Annual J4th Hmong Basketball Tournament"}</h2>
+                <hr>
+                <h2>June 30</h2>
+                <hr>
+                <a href="https://allevents.in/minneapolis/9th-annual-j4th-hmong-basketball-tournament/200024362480820?ref=eventlist-cat" target="_blank">Link</a>`);
+
+
+    var event12 = L.marker([45.056587, -93.325143])
+    .bindPopup(`<h2>${"It's Mai Time Hmong Summer Day Camp"}</h2>
+    <hr>
+    <h2>June 26 - June 30</h2>
+    <hr>
+    <a href="https://allevents.in/minneapolis/its-mai-time-hmong-summer-day-camp/10000541655023757" target="_blank">Link</a>`);
+
+    var event13 = L.marker([44.9554842, -93.1112529])
+    .bindPopup(`<h2>${"Immigration, Identity, and the Arts: The Best We Could Do"}</h2>
+                <hr>
+                <h2>June 1 6:30pm</h2>
+                <hr>
+                <a href="https://allevents.in/saint%20paul/immigration-identity-and-the-arts-the-best-we-could-do/10000636685943797" target="_blank">Link</a>`);
+
+    var event14 = L.marker([44.9882226, -93.0619803])
+    .bindPopup(`<h2>${"iStrive Golf Tournament Fundraiser"}</h2>
+                <hr>
+                <h2>June 12 12:30pm</h2>
+                <hr>
+                <a href="https://allevents.in/mobile/amp-event.php?event_id=200024241132443" target="_blank">Link</a>`);
+
+    var hmong = L.layerGroup([event10, event11, event12, event13, event14]);
+
+    //////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
+    // STEP 5c: Add markers for Latinx events
+    var event15 = L.marker([44.9421608, -93.137482])
+    .bindPopup(`<h2>${"Latino Lawyer Camp"}</h2>
+                <hr>
+                <h2>June 24 8:00am - 4:00pm</h2>
+                <hr>
+                <a href="https://calendar.mitchellhamline.edu/event/latino-lawyer-camp-6/" target="_blank">Link</a>`);
+
+    var event16 = L.marker([44.9370994, -93.3425827])
+    .bindPopup(`<h2>${"Latin Expo Fair"}</h2>
+                <hr>
+                <h2>June 24 12:00pm</h2>
+                <hr>
+                <a href="https://www.exploreminnesota.com/event/latin-expo-fair/30238" target="_blank">Link</a>`);
+
+    var event17 = L.marker([44.9613445, -93.0675412])
+    .bindPopup(`<h2>${"Homebuyer Workshop"}</h2>
+                <hr>
+                <h2>June 24 8:30am - 5:30pm</h2>
+                <hr>
+                <a href="https://www.hocmn.org/workshop/comunidades-latinas-unidas-en-servicio-3/" target="_blank">Link</a>`);
+
+    var latinx = L.layerGroup([event15, event16, event17]);
+
+    //////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
+    // STEP 5d: Cedar Riverside Somali events
+    var event18 = L.marker([44.9695139, -93.2475806])
+    .bindPopup(`<h2>${"NIMCAAN HILAAC & HILAAC BAND with Bashir Jaawi"}</h2>
+                <hr>
+                <h2>June 2 8:00pm</h2>
+                <hr>
+                <a href="https://www.thecedar.org/listing-2/2023/6/2/nimcaan-hilaac-amp-hilaac-band-with-special-guest" target="_blank">Link</a>`);
+
+    var event19 = L.marker([44.968682, -93.2445982])
+    .bindPopup(`<h2>${"Homestretch Workshop"}</h2>
+                <hr>
+                <h2>June 10 9:00am - 5:30pm</h2>
+                <hr>
+                <a href="https://www.eventbrite.com/e/homestretch-workshop-june-2023-somali-registration-504832877727" target="_blank">Link</a>`);
+    
+    var cr_somali = L.layerGroup([event18, event19]);
+
+    //////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
+    // STEP 5e: Dinkytown events
+
+    var dinky = L.layerGroup([]);
 
     // Overlays that may be toggled on or off
     var overlayMaps = {
         "Target Neighborhoods": geojsonLayer,
-        "Indigenous": indigienous
+        "Indigenous": indigienous,
+        "Hmong": hmong,
+        "Latinx": latinx,
+        "Somali - Cedar Riverside": cr_somali
     };
 
-    // STEP 5: Layer Control
+    // WAM Marker
+    // var wam = L.marker([44.9731104,-93.2369351]).bindPopup(`<h2>${"Weisman Art Museum"}</h2>`);
+
+    // STEP 6: Layer Control
     // Create a layer control, containing our baseMaps and overlayMaps, and add them to the map
     L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 }
